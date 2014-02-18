@@ -1,8 +1,8 @@
 class SolitaireCipher
 
-	def initialize
-		@key = (1..54).to_a
-	end
+  def initialize
+    @key = (1..54).to_a
+  end
 
   def sanitize(text)
     text = text.gsub(/[^a-z]/i, '').upcase
