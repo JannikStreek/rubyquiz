@@ -1,4 +1,4 @@
-rubyquiz
+Janniks RubyQuiz Solutions
 ========
 
-Solutions for the Ruby Quiz tasks
+Tasks are available at: http://rubyquiz.com/
