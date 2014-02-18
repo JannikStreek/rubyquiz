@@ -1,9 +1,9 @@
 class SecretSantas
   require 'net/smtp'
 
-	def initialize(file)
+  def initialize(file)
     @santas = Hat.new(read_input(file)).sort
-	end
+  end
 
   def read_input(file)
     santas = []
@@ -34,13 +34,13 @@ class SecretSantas
   end
 
   def send_mail(opts={})
-    opts[:from]        ||= 'theshowcanbegin@gmail.com'
+    opts[:from]        ||= 'email@gmail.com'
     opts[:from_alias]  ||= 'rubyquiz'
     opts[:subject]     ||= "SecretSantas Victim"
     opts[:body]        ||= ""
-    opts[:to]          ||= "theshowcanbegin@gmail.com"
-    opts[:login]       ||= "theshowcanbegin"
-    opts[:password]    ||= "XXXX"
+    opts[:to]          ||= "email@gmail.com"
+    opts[:login]       ||= "login"
+    opts[:password]    ||= "password"
 
 msg = <<END_OF_MESSAGE
 From: #{opts[:from_alias]} <#{opts[:from]}>
